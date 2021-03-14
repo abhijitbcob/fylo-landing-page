@@ -1,0 +1,62 @@
+.heading-1,
+.heading-2 {
+    font-family: $raleway;
+    font-weight: 700;
+    color: $white;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.heading-1 {
+    font-size: clamp(3rem, 4vw, 4rem);
+    margin: 0;
+
+    @media(min-width:500px) {
+        line-height: 1.5;
+        margin-top: 4rem;
+    }
+}
+
+.heading-2 {
+    font-size: clamp(3rem, 4vw, 3.8rem);
+    text-align: left;
+    line-height: 1.2;
+}
+
+.hero__text {
+    font-size: clamp(1.6rem, 3vw, 1.8rem);
+    color: rgba($white, .8);
+    font-family: $open-sans;
+    font-weight: 400;
+    margin: 3rem auto;
+    max-width: 58rem;
+
+    @media only screen and (max-width:750px) {
+        margin: 2rem auto;
+    }
+}
+
+.heading-4 {
+    color: rgba($white, .9);
+    font-size: 20px;
+    font-family: $raleway;
+}
+
+.paragraph {
+    color: rgba($white, .9);
+    font-size: 14px;
+    font-family: $open-sans;
+    line-height: 1.4;
+
+    @media only screen and (max-width: 39.5em) {
+        font-size: 13px;
+    }
+}
+
+.heading-3 {
+    color: $white;
+    font-size: 3.3rem;
+    font-size: clamp(2.4rem, 3vw, 3.3rem);
+    font-family: $raleway;
+
+}

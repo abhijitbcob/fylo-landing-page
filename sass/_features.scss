@@ -1,0 +1,37 @@
+.features {
+    max-width: 90rem;
+    margin: 0 auto;
+
+    @media only screen and (min-width:1516px) {
+        width: 59.36vw;
+    }
+
+    //Grid layout
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 11rem;
+    grid-row-gap: 4.5rem;
+
+    @media only screen and (max-width:750px) {
+        padding-top: 5rem;
+        grid-template-columns: 1fr;
+    }
+
+    &__item {
+        text-align: center;
+
+        img {
+            height: 7.5rem;
+
+        }
+
+        h4 {
+            margin-top: 2.5rem;
+        }
+
+        p {
+            margin: 1.5rem 0;
+        }
+    }
+
+}

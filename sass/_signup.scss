@@ -1,0 +1,69 @@
+.signup {
+    background-color: $dark-blue-1;
+    max-width: 86.5rem;
+    margin: 0 auto;
+    border-radius: 5px;
+    padding: 4rem 7rem;
+    position: relative;
+    z-index: 10;
+
+    @media only screen and (min-width:1516px) {
+        width: 57.05vw;
+    }
+
+    ///TESTING
+    transform: translateY(-50%);
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap:3.8rem;
+    justify-items: center;
+
+
+    @media only screen and (max-width: 39.5em) {
+        padding: 4rem 2rem;
+        grid-gap: 2.5rem;
+
+    }
+
+    .paragraph {
+        padding: 0 5rem;
+        text-align: center;
+
+        @media only screen and (max-width: 39.5em) {
+            padding: 0 2.5rem;
+
+
+        }
+    }
+
+    &__form {
+        width: 95%;
+        display: grid;
+        grid-template-columns: 2.5fr 1fr;
+        grid-gap: 2.8rem;
+
+        @media only screen and (max-width: 39.5em) {
+            grid-template-columns: 1fr;
+        }
+
+        font-size: 14px;
+
+        &>* {
+            padding: 1.5rem 3.4rem;
+            border-radius: 50px;
+            outline: none;
+        }
+
+        &-button {
+            color: $white;
+            border: none;
+            background-image: linear-gradient(to right, $cyan, $blue);
+            cursor: pointer;
+
+            &:hover {
+                background-image: linear-gradient(to right, $cyan, $cyan);
+            }
+        }
+    }
+}

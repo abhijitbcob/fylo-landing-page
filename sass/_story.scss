@@ -1,0 +1,57 @@
+.story {
+    margin: 12.5rem auto;
+
+    @media only screen and (min-width:94.8125em) {
+        width: 73vw;
+    }
+
+    @media only screen and (max-width:94.75em) {
+        max-width: 128.5rem;
+    }
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 6rem;
+
+    @media only screen and (max-width:46.875em) {
+        grid-template-columns: 1fr;
+
+    }
+
+    &__picture {
+        width: 100%;
+    }
+
+    &__text {
+        padding-left: 2rem;
+        padding-right: 6rem;
+        display: grid;
+        grid-template-rows: repeat(3, min-content);
+        justify-content: start;
+        align-content: center;
+        grid-gap: 2.5rem;
+
+
+        a:link,
+        a:visited {
+            text-decoration: none;
+            font-size: 13px;
+            color: $cyan;
+            font-family: $raleway;
+            display: flex;
+            border-bottom: 1px solid $cyan;
+            justify-self: start;
+            line-height: 1.1;
+        }
+
+        a:hover {
+            color: $white;
+            border-color: $white;
+
+            svg g use {
+                fill: $white;
+            }
+        }
+
+    }
+}
